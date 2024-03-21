@@ -1,2 +1,5 @@
-# Ignora la carpeta node_modules
+# Ignora las carpetas node_modules y dist, el archivo package-lock.json, y cualquier cache que se genere
 node_modules
+dist
+package-lock.json
+*cache*
