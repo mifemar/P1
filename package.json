@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "mfernandezmarti@uoc.edu\r Miguel Fernández Martín",
   "main": "index.js",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel",
+    "build": "parcel build"
   },
   "keywords": [],
   "author": "",
