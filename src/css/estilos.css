@@ -76,6 +76,9 @@ html {
 i {
 	font-style: italic;
 }
+b {
+	font-weight: bolder;
+}
 strong {
 	font-weight: bold;
 }
