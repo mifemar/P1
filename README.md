@@ -19,11 +19,12 @@ Crear el archivo .gitignore y añadirle las siguientes líneas (para que no suba
 
 Añadir las siguientes líneas al archivo *package.json*: Building a web app with Parcel (https://parceljs.org/getting-started/webapp/)
     {
+        "name": "p1",
         "source": "src/index.html",
         "browserslist": "> 0.5%, last 2 versions, not dead",
         "scripts": {
-            "start": "parcel",
-            "build": "parcel build"
+            "start": "parcel serve --dist-dir dist src/index.html",
+            "build": "parcel build --dist-dir build --public-url https://mifemar.github.io/P1 src/index.html"
         },
         "devDependencies": {
             "parcel": "latest"
