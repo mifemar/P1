@@ -7,9 +7,10 @@ Miguel Fernández Martín
 
 > git init (para iniciar el repositorio -> carpeta oculta .git)
 
-Crear el archivo .gitignore y añadirle las siguientes líneas (para que no suba al repositorio remoto: los módulos de node.js instalados, los archivos fuente del sitio *web*, las caches generadas, el archivo *package-lock.json*)
+Crear el archivo .gitignore y añadirle las siguientes líneas (para que no suba al repositorio remoto: los módulos de node.js instalados, los archivos fuente del sitio *web*, la carpeta de pruebas dist, las caches generadas, el archivo *package-lock.json*)
     node_modules
     src
+    dist
     .parcel-cache
     package-lock.json
 
@@ -23,7 +24,7 @@ Añadir las siguientes líneas al archivo *package.json*: Building a web app wit
         "source": "src/index.html",
         "browserslist": "> 0.5%, last 2 versions, not dead",
         "scripts": {
-            "start": "parcel serve --dist-dir dist src/index.html",
+            "start": "parcel serve src/index.html",
             "build": "parcel build --dist-dir build --public-url https://mifemar.github.io/P1 src/index.html"
         },
         "devDependencies": {
@@ -42,12 +43,12 @@ Añadir la estructura HTML, CSS, JS y PHP del sitio *web*
 Añadir las siguientes líneas al archivo *.postcssrc*
     {
         "plugins": {
-            "cssnano": {
-                "preset": "default"   
-            },
             "postcss-custom-properties": {},
             "postcss-import": true,
-            "postcss-url": true
+            "postcss-url": true,
+            "cssnano": {
+                "preset": "default"   
+            }
         }
     }
 
@@ -59,4 +60,4 @@ Crear un repositorio en GitHub (para evitar errores, no inicializar el nuevo rep
 
 En el repositorio creado en GitHub > Pestaña *Settings* > Menú *Pages* > Activar la dirección *web*, en su caso, en la sección **Build an deployment - Branch**
 
-https://mifemar.github.io/P1/dist/index.html
+https://mifemar.github.io/P1/build/index.html
