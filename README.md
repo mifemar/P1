@@ -25,7 +25,7 @@ Añadir las siguientes líneas al archivo *package.json*: Building a web app wit
         "browserslist": "> 0.5%, last 2 versions, not dead",
         "scripts": {
             "start": "parcel serve src/index.html",
-            "build": "parcel build --dist-dir build --public-url https://mifemar.github.io/P1 src/index.html"
+            "build": "parcel build --dist-dir dist --public-url https://mifemar.github.io/P1 src/index.html"
         },
         "devDependencies": {
             "parcel": "latest"
@@ -60,4 +60,4 @@ Crear un repositorio en GitHub (para evitar errores, no inicializar el nuevo rep
 
 En el repositorio creado en GitHub > Pestaña *Settings* > Menú *Pages* > Activar la dirección *web*, en su caso, en la sección **Build an deployment - Branch**
 
-https://mifemar.github.io/P1/build/index.html
+

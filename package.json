@@ -7,10 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel serve src/index.html",
-    "build": "parcel build --dist-dir build src/index.html",
-    "minify:html": "html-minifier --input-dir build --output-dir build --file-ext html --collapse-whitespace --remove-comments",
-    "minify:js": "terser --compress --mangle --output build/presentacion.ff70c4a1.min.js -- build/presentacion.ff70c4a1.js",
-    "minify": "npm run minify:html && npm run minify:js"
+    "build": "parcel build --dist-dir dist src/index.html"
   },
   "keywords": [],
   "author": "",
