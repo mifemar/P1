@@ -50,4 +50,8 @@ Crear un repositorio en GitHub (para evitar errores, no inicializar el nuevo rep
 
 > git remote add origin REMOTE-URL (para agregar la URL del repositorio remoto donde se enviará el repositorio local. Se puede verificar con el comando > git remote -v)
 
-> git push origin main (para enviar los cambios del repositorio local a GitHub)
+> git push origin master (para enviar los cambios del repositorio local a GitHub) (¡¡¡Importante!!! Que la rama local esté creada: Si no fuese así, se puede crear con el comando > git checkout -b master. Se puede comprobar si está creada con el comando > git branch. Finalmente, si está creada, se puede cambiar de nombre con el comando > git branch -m NEW-NAME)
+
+En el repositorio creado en GitHub > Pestaña *Settings* > Menú *Pages* > Activar la dirección *web*, en su caso, en la sección **Build an deployment - Branch**
+
+https://mifemar.github.io/P1/src/index.html
