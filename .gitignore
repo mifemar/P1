@@ -1,5 +1,5 @@
 # Ignora las carpetas node_modules y dist, el archivo package-lock.json, y cualquier cache que se genere
 node_modules
-dist
+src
 .parcel-cache
 package-lock.json
