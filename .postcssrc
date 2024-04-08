@@ -1,10 +1,8 @@
 {
   "plugins": {
-    "cssnano": {
-      "preset": "default"   
-    },
     "postcss-custom-properties": {},
     "postcss-import": true,
-    "postcss-url": true
+    "postcss-url": true,
+    "cssnano": {}
   }
 }
