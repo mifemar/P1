@@ -60,4 +60,6 @@ Crear un repositorio en GitHub (para evitar errores, no inicializar el nuevo rep
 
 En el repositorio creado en GitHub > Pestaña *Settings* > Menú *Pages* > Activar la dirección *web*, en su caso, en la sección **Build an deployment - Branch**
 
+Finalmente, crear un nuevo sitio *web* en Netlify a partir del código disponible en GitHub (Branch to deploy -> master, Build command -> npm run build, Publish directory -> dist)
 
+https://p1mfernandezmarti.netlify.app/
