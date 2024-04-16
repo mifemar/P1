@@ -7,14 +7,13 @@ Miguel Fernández Martín
 
 > git init (para iniciar el repositorio -> carpeta oculta .git)
 
-Crear el archivo .gitignore y añadirle las siguientes líneas (para que no suba al repositorio remoto: los módulos de node.js instalados, los archivos fuente del sitio *web*, la carpeta de pruebas dist, las caches generadas, el archivo *package-lock.json*)
+Crear el archivo .gitignore y añadirle las siguientes líneas (para que no suba al repositorio remoto: los módulos de node.js instalados, los archivos fuente del sitio *web*, las caches generadas, el archivo *package-lock.json*)
     node_modules
     src
-    dist
     .parcel-cache
     package-lock.json
 
-> npm init -y (para crear el archivo *package.json*)
+> npm init -y (inicializar el proyecto y crear el archivo *package.json*)
 
 > npm install --save-dev parcel (para instalar Parcel)
 
@@ -32,11 +31,11 @@ Añadir las siguientes líneas al archivo *package.json*: Building a web app wit
         }
     }
 
-Crear los archivos *.postcssrc* y *.posthtmlrc* (para añadir los *plugins* necesarios)
-
 > md src (para crear la carpeta *src*)
 
 Añadir la estructura HTML, CSS, JS y PHP del sitio *web*
+
+Crear los archivos *.postcssrc* y *.posthtmlrc* (para añadir los *plugins* necesarios)
 
 > npm install cssnano postcss-custom-properties postcss-import postcss-url --save-dev (para instalar los *plugins* de PostCSS: CSSNano, PostCSS-custom-properties, PostCSS-import y PostCSS-url)
 
@@ -51,6 +50,8 @@ Añadir las siguientes líneas al archivo *.postcssrc*
             }
         }
     }
+
+> npm install @babel/core @parcel/babel-preset-env --save-dev  (para instalar el *plugin* Babel de PostCSS que dar soporte a navegadores antiguos. Esta herramienta transpila el código de JS a una versión compatible con navegadores más antiguos)
 
 Crear un repositorio en GitHub (para evitar errores, no inicializar el nuevo repositorio con archivos README, licencia o gitignore. Se pueden agregar estos archivos después de que el proyecto haya sido enviado a GitHub)
 
