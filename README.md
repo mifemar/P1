@@ -15,7 +15,11 @@ Crear el archivo .gitignore y añadirle las siguientes líneas (para que no suba
 
 > npm init -y (inicializar el proyecto y crear el archivo *package.json*)
 
-> npm install --save-dev parcel (para instalar Parcel)
+> npm install parcel --save-dev (para instalar Parcel)
+
+> md src (para crear la carpeta *src*)
+
+Añadir la estructura HTML, CSS, JS y PHP del sitio *web*
 
 Añadir las siguientes líneas al archivo *package.json*: Building a web app with Parcel (https://parceljs.org/getting-started/webapp/)
     {
@@ -23,17 +27,17 @@ Añadir las siguientes líneas al archivo *package.json*: Building a web app wit
         "source": "src/index.html",
         "browserslist": "> 0.5%, last 2 versions, not dead",
         "scripts": {
-            "start": "parcel serve src/index.html",
-            "build": "parcel build --dist-dir dist --public-url https://mifemar.github.io/P1 src/index.html"
+            "start": "parcel serve",
+            "build": "parcel build --dist-dir dist --public-url https://mifemar.github.io/P1"
         },
         "devDependencies": {
             "parcel": "latest"
         }
     }
 
-> md src (para crear la carpeta *src*)
+El campo "browserslist": "> 0.5%, last 2 versions, not dead", incorporado en el archivo package.json, declara los navegadores compatibles con la aplicación.  Cuando se declara este campo, Parcel transpilará su código en consecuencia para garantizar la compatibilidad con los navegadores compatibles.
 
-Añadir la estructura HTML, CSS, JS y PHP del sitio *web*
+> npm install @babel/core @parcel/babel-preset-env --save-dev  (para instalar el *plugin* Babel que da soporte a navegadores antiguos. Esta herramienta transpila el código de JS a una versión compatible con navegadores más antiguos)
 
 Crear los archivos *.postcssrc* y *.posthtmlrc* (para añadir los *plugins* necesarios)
 
@@ -50,8 +54,6 @@ Añadir las siguientes líneas al archivo *.postcssrc*
             }
         }
     }
-
-> npm install @babel/core @parcel/babel-preset-env --save-dev  (para instalar el *plugin* Babel de PostCSS que dar soporte a navegadores antiguos. Esta herramienta transpila el código de JS a una versión compatible con navegadores más antiguos)
 
 Crear un repositorio en GitHub (para evitar errores, no inicializar el nuevo repositorio con archivos README, licencia o gitignore. Se pueden agregar estos archivos después de que el proyecto haya sido enviado a GitHub)
 
