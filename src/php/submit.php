@@ -18,7 +18,7 @@ $asunto = 'Mensaje de la P2 del Máster de Desarrollo Web';
 
 mail($para, $asunto, utf8_decode($message), $header);
 
-header("Location: http://127.0.0.1:5500/presentacion.html");
+header("Location: https://p1mfernandezmarti.netlify.app/presentacion");
 ?>
 
 
